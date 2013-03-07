@@ -18,7 +18,7 @@
 			testLink.attr("href", "/test/link/relative/link with spaces");
 
 			testLink.slugify();
-			same(testLink.attr("href"), "/test/link/relative/link-with-spaces");
+			deepEqual(testLink.attr("href"), "/test/link/relative/link-with-spaces");
 		});
 
 		test("Relative Slugify With Word Parameter", function() {
@@ -30,7 +30,7 @@
 			testLink.slugify({
 				'max_words': 2
 			});
-			same(testLink.attr("href"), "/test/link/relative/link-with");
+			deepEqual(testLink.attr("href"), "/test/link/relative/link-with");
 		});
 
 		test("Relative Slugify With Length Parameter", function() {
@@ -42,7 +42,7 @@
 			testLink.slugify({
 				'max_length': 6
 			});
-			same(testLink.attr("href"), "/test/link/link-with");
+			deepEqual(testLink.attr("href"), "/test/link/link-with");
 		});
   	</script>
 </head>

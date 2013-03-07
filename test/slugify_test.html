@@ -32,18 +32,6 @@
 			});
 			deepEqual(testLink.attr("href"), "/test/link/relative/link-with");
 		});
-
-		test("Relative Slugify With Length Parameter", function() {
-			expect(1);
-
-			var testLink = $("#test-link");
-			testLink.attr("href", "/test/link/relative/link with spaces");
-
-			testLink.slugify({
-				'max_length': 6
-			});
-			deepEqual(testLink.attr("href"), "/test/link/link-with");
-		});
   	</script>
 </head>
 <body>

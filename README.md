@@ -23,12 +23,3 @@ Converts a url into a slugged url (usually for SEO puposes). Can specify make wo
     console.log(slugged.attr("href"))
 
     /test/link/relative/link-with
-
-#### Max Length
-
-    <a class="test-link" href="/test/link/relative/link with spaces">My Link</a>
-    
-    var slugged = $("a.test-link").slugify({'max_length':6})
-    console.log(slugged.attr("href"))
-
-    /test/link/relative/link-wi
